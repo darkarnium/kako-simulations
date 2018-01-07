@@ -24,7 +24,7 @@ The following simulations are currently included:
   * Simulates a vulnerable Realtek SDK uPnP / SOAP interface.
 * `007-Generic-uPnP.yaml` - Generic uPnP
   * Simulates a generic `miniupnpd` service.
-* `008-Linnux-uPnP.yaml` - Linux uPnP
+* `008-Linux-uPnP.yaml` - Linux uPnP
   * Simulates a generic Linux `uPnP/1.0` service.
 
 ## Additional Reading
