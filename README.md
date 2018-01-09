@@ -26,6 +26,10 @@ The following simulations are currently included:
   * Simulates a generic `miniupnpd` service.
 * `008-Linux-uPnP.yaml` - Linux uPnP
   * Simulates a generic Linux `uPnP/1.0` service.
+* `009-Linksys.yaml` - Linksys HTTP web interface.
+  * Simulates a Linksys `mini_httpd` service.
+* `010-TPLink.yaml` - TPLink HTTP web interface.
+  * Simulates a TPLink `Router Webserver` service.
 
 ## Additional Reading
 
