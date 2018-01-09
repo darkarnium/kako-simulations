@@ -1,7 +1,7 @@
 ---
 name: Huawei uPnP Simulation
 port: 37215
-version: 0.1.0
+version: 0.2.0
 protocol: http
 server:
   banner: 'Linux uPnP/1.0 Huawei-ATP-IGD'
@@ -21,7 +21,18 @@ server:
       - key: 'USN'
         value: 'uuid:e7ca24dc-d9de-4264-a134-0169ab3448ce::upnp:rootdevice'
   routes:
+    put: []
+    patch: []
     options: []
     head: []
-    post: []
+    post:
+      - vulnerability: 'Huawei - DeviceUpgrade_1 remote code execution (CVE-2017-17215)'
+        route: '/ctrlt/DeviceUpgrade_1'
+        response: 
+          code: 200
+          text: 'OK'
+          body: ''
+          headers:
+            - key: 'Content-Type'
+              value: 'text/xml'
     get: []

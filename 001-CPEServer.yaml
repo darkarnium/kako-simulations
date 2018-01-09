@@ -1,7 +1,7 @@
 ---
 name: CPEServer HTTP Simulation
 port: 7547
-version: 0.1.0
+version: 0.2.0
 protocol: http
 server:
   banner: 'gSOAP/2.7'
@@ -11,9 +11,11 @@ server:
     body: ''
     headers: []
   routes:
-    get: []
+    put: []
+    patch: []
     options: []
     head: []
+    get: []
     post:
       - vulnerability: 'Generic - TR-069 SOAP remote code execution'
         route: '/UD/act'

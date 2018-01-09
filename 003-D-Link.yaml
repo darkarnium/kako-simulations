@@ -1,7 +1,7 @@
 ---
 name: D-Link HTTP Simulation
 port: 8080
-version: 0.1.0
+version: 0.2.0
 protocol: http
 server:
   banner: 'httpd'
@@ -13,6 +13,8 @@ server:
       - key: 'WWW-Authenticate'
         value: 'Basic realm="D-Link Router"'
   routes:
+    put: []
+    patch: []
     options: []
     head: []
     post:

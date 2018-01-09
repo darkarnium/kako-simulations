@@ -1,0 +1,21 @@
+---
+name: Linksys HTTP Simulation
+port: 10000
+version: 0.1.0
+protocol: http
+server:
+  banner: 'mini_httpd'
+  response:
+    code: 401
+    text: 'Unauthorized'
+    body: '<HTML><HEAD><TITLE>401 Unauthorized</TITLE></HEAD><BODY BGCOLOR="#cc9999" TEXT="#000000" LINK="#2020ff" VLINK="#4040cc"><H4>401 Unauthorized</H4>Authorization required.'
+    headers:
+      - key: 'WWW-Authenticate'
+        value: 'Basic realm="Linksys LCAD03VLNOD"'
+  routes:
+    put: []
+    patch: []
+    options: []
+    head: []
+    post: []
+    get: []

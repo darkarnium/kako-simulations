@@ -1,0 +1,21 @@
+---
+name: TPLink HTTP Simulation
+port: 8081
+version: 0.1.0
+protocol: http
+server:
+  banner: 'Router Webserver'
+  response:
+    code: 401
+    text: 'N/A'
+    body: ''
+    headers:
+      - key: 'WWW-Authenticate'
+        value: 'Basic realm="TP-LINK Wireless Lite N Router WR740N"'
+  routes:
+    put: []
+    patch: []
+    options: []
+    head: []
+    post: []
+    get: []

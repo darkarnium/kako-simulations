@@ -1,7 +1,7 @@
 ---
 name: NetGear HTTPS Simulation
 port: 8443
-version: 0.1.0
+version: 0.2.0
 protocol: https
 certificate: routerlogin.pem
 server:
@@ -14,6 +14,8 @@ server:
       - key: 'WWW-Authenticate'
         value: 'Basic realm="NETGEAR R7000"'
   routes:
+    put: []
+    patch: []
     options: []
     head: []
     post:
@@ -22,7 +24,7 @@ server:
         response: 
           code: 200
           text: 'OK'
-          body: ''
+          body: 'TEST'
           headers: []
       - vulnerability: 'NetGear - cgi_system remote code execution'
         route: '/cgi-bin/cgi_system'
